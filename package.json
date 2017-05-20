@@ -6,9 +6,14 @@
   "author": "Sam Marshall <sjmarshy@gmail.com>",
   "license": "GPL-3.0+",
   "scripts": {
-      "commit": "git commit"
+    "commit": "git commit",
+    "start": "tsc && node dist"
   },
   "dependencies": {
-    "vorpal": "^1.12.0"
+    "@types/immutable": "^3.8.7",
+    "@types/inquirer": "^0.0.34",
+    "@types/node": "^7.0.21",
+    "immutable": "^3.8.1",
+    "inquirer": "^3.0.6"
   }
 }
