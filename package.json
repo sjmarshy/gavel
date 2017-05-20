@@ -1,0 +1,14 @@
+{
+  "name": "the-one-who-knocks",
+  "version": "0.1.0",
+  "description": "A cli that helps you order things you know by asking a series of questions",
+  "main": "dist/index.js",
+  "author": "Sam Marshall <sjmarshy@gmail.com>",
+  "license": "GPL-3.0+",
+  "scripts": {
+      "commit": "git commit"
+  },
+  "dependencies": {
+    "vorpal": "^1.12.0"
+  }
+}
