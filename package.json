@@ -1,5 +1,5 @@
 {
-  "name": "the-one-who-knocks",
+  "name": "gavel",
   "version": "0.1.0",
   "description": "A cli that helps you order things you know by asking a series of questions",
   "main": "dist/index.js",
