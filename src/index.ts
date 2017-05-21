@@ -1,32 +1,15 @@
 import { prompt } from 'inquirer';
 import { List } from 'immutable';
-import { get, set } from './list';
-
-interface Decision {
-    item: string;
-    next: Array<number>;
-}
+import { get, set, questionItem } from './list';
+import { Decision, fresh, discardPossibilityAndAbove, discardPossibilityAndBelow } from './decision';
+import getMiddle from './utils/getMiddle';
+import getCenterArray from './utils/getCenterArray';
 
 function isDifferenceOneOrZero(x: number, y: number): boolean {
     const greater = x > y ? x : y;
     const lesser = x > y ? y : x;
     const diff = greater - lesser;
     return diff === 1 || diff === 0;
-}
-
-function freshDecision(item: string, list: List<string>): Decision {
-    return {
-        item,
-        next: [0, list.size - 1],
-    };
-}
-
-function getMiddle(start: number, end: number): number {
-    return Math.floor(start + end / 2);
-}
-
-function itemToAskAbout(list: List<string>, { next: [start, end] }: Decision): string {
-    return list.get(getMiddle(start, end));
 }
 
 function updateList(list: List<string>, item: string, position: number): List<string> {
@@ -43,38 +26,45 @@ async function ask(name: string, decision: Decision | undefined) {
             message: 'what should we insert?'
         }]);
 
-        decision = freshDecision(ans.item, list);
+        decision = fresh(ans.item, list.size);
     }
+
+    console.log(decision);
 
     if (list.size === 0) {
         set(name, list.push(decision.item));
     }
 
-    const ans = await prompt([{
-        type: 'confirm',
-        name: 'decision',
-        message: `is ${decision.item} above ${itemToAskAbout(list, decision)}`,
-        default: false
-    }]);
+    if (!Array.isArray(decision.positions)) {
 
-    const middle = getMiddle(decision.next[0], decision.next[1]);
+        const ans = await prompt([{
+            type: 'confirm',
+            name: 'decision',
+            message: `is ${decision.item} above ${list.get(decision.positions)}?`,
+            default: false
+        }]);
 
-    if (!middle || isDifferenceOneOrZero(decision.next[0], decision.next[1])) {
-        const { item, next: [one, two] } = decision;
-        const position = ans.decision ? one : two;
-        set(name, updateList(list, item, (list.size === position + 1 ? position + 1 : position)));
-        return;
+        const insertPosition = ans.decision ? decision.positions : decision.positions + 1;
+
+        set(name, list.insert(insertPosition, decision.item));
+    } else {
+
+        let posUnderQuestion = getCenterArray(decision.positions);
+        let itemUnderQuestion = questionItem(list, decision);
+
+        const ans = await prompt([{
+            type: 'confirm',
+            name: 'decision',
+            message: `is ${decision.item} above ${itemUnderQuestion}`,
+            default: false
+        }]);
+
+        if (ans.decision) {
+            ask(name, discardPossibilityAndBelow(decision, posUnderQuestion));
+        } else {
+            ask(name, discardPossibilityAndAbove(decision, posUnderQuestion));
+        }
     }
-
-    if (ans.decision) {
-        decision.next[1] = decision.next[1] === middle ? middle - 1 : middle;
-    } else if (!ans.decision) {
-        decision.next[0] = decision.next[0] === middle ? middle + 1 : middle;
-    }
-
-    console.log(decision);
-
-    ask(name, decision);
 }
 
 async function main() {

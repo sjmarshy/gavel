@@ -19,6 +19,10 @@
   version "7.0.21"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.21.tgz#22a890f19b26cff9b6699b493dea1bcee4410da1"
 
+"@types/ramda@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.0.9.tgz#c1b56c643688bf1c27a543ccfbc502cbda6772b6"
+
 "@types/rx-core-binding@*":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@types/rx-core-binding/-/rx-core-binding-4.0.3.tgz#74261d1df5ab9eafa697ed9e8243999787cc87ae"
@@ -218,6 +222,10 @@ onetime@^2.0.0:
 os-tmpdir@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
+
+ramda@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.23.0.tgz#ccd13fff73497a93974e3e86327bfd87bd6e8e2b"
 
 restore-cursor@^2.0.0:
   version "2.0.0"

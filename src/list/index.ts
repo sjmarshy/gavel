@@ -1,6 +1,8 @@
 import { writeFile, stat, readFile } from 'fs';
 import { join } from 'path';
 import { List } from 'immutable';
+import { Decision } from '../decision';
+import getCenterArray from '../utils/getCenterArray';
 
 function fileExists(path: string): Promise<boolean> {
     return new Promise((resolve, reject) => {
@@ -50,7 +52,18 @@ function listFromFile(path: string): Promise<List<string>> {
 }
 
 function getPath(name: string): string {
-    return join(__dirname, '../..', name);
+    return join(__dirname, '../../dat', name);
+}
+
+export function questionItem(l: List<string>, d: Decision): string {
+    let itemToTest;
+    if (Array.isArray(d.positions)) {
+        itemToTest = getCenterArray(d.positions);
+    } else {
+        itemToTest = d.positions;
+    }
+
+    return l.get(itemToTest);
 }
 
 export function set(name: string, list: List<string>): Promise<{}> {

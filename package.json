@@ -13,7 +13,9 @@
     "@types/immutable": "^3.8.7",
     "@types/inquirer": "^0.0.34",
     "@types/node": "^7.0.21",
+    "@types/ramda": "^0.0.9",
     "immutable": "^3.8.1",
-    "inquirer": "^3.0.6"
+    "inquirer": "^3.0.6",
+    "ramda": "^0.23.0"
   }
 }
