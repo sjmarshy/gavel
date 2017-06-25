@@ -1,4 +1,5 @@
 import Asker from '../asker'
+import { EventEmitter } from 'events'
 
 export class Empty {
     toString() {
@@ -20,7 +21,8 @@ export class TreeNode<T> {
     }
 
     toString() {
-        return `${this.right}\n${this.element}\n${this.left}`
+        return `
+        ${this.right}${this.element}${this.left}`
     }
 }
 
@@ -36,28 +38,33 @@ function isEmpty<T>(t: Tree<T>): t is Empty {
     return t instanceof Empty
 }
 
-export async function insert<T>(
-    ask: Asker<T>,
-    e: T,
-    t: Tree<T>,
-): Promise<Tree<T>> {
+export function insert<T>(ask: Asker<T>, e: T, t: Tree<T>): Promise<Tree<T>> {
     if (isEmpty(t)) {
-        return raw(empty(), e, empty())
-    } else {
-        const treeNode: TreeNode<T> = t
-        const lessThen = await ask.lt(e, treeNode.element)
-        if (lessThen) {
-            return raw(
-                treeNode.left,
-                treeNode.element,
-                await insert(ask, e, treeNode.right),
-            )
-        } else {
-            return raw(
-                await insert(ask, e, treeNode.left),
-                treeNode.element,
-                treeNode.right,
-            )
-        }
+        return Promise.resolve(raw(empty(), e, empty()))
     }
+
+    return new Promise((resolve, reject) => {
+        const treeNode: TreeNode<T> = t
+        const ev = ask.lt(e, treeNode.element)
+
+        ev.on('decision', async (lt: boolean) => {
+            if (lt) {
+                return resolve(
+                    raw(
+                        treeNode.left,
+                        treeNode.element,
+                        await insert(ask, e, treeNode.right),
+                    ),
+                )
+            } else {
+                return resolve(
+                    raw(
+                        await insert(ask, e, treeNode.left),
+                        treeNode.element,
+                        treeNode.right,
+                    ),
+                )
+            }
+        })
+    })
 }

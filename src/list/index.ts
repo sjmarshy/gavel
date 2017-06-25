@@ -1,41 +1,40 @@
-import { writeFile, stat, readFile } from 'fs';
-import { join } from 'path';
-import { List } from 'immutable';
-import { Decision } from '../decision';
-import getCenterArray from '../utils/getCenterArray';
+/*
+import { writeFile, stat, readFile } from 'fs'
+import { join } from 'path'
+import { List } from 'immutable'
+import getCenterArray from '../utils/getCenterArray'
 
 function fileExists(path: string): Promise<boolean> {
     return new Promise((resolve, reject) => {
         stat(path, (err, stats) => {
             if (err && err.code === 'ENOENT') {
-                resolve(false);
+                resolve(false)
             } else if (err) {
-                reject(err);
+                reject(err)
             } else {
-                resolve(true);
+                resolve(true)
             }
-        });
-    });
+        })
+    })
 }
 
 function makeFile(path: string): Promise<{}> {
     return new Promise((resolve, reject) => {
         writeFile(path, '', 'utf8', err => {
             if (err) {
-                reject(err);
+                reject(err)
             } else {
-                resolve();
+                resolve()
             }
         })
     })
-
 }
 
 function listFromFile(path: string): Promise<List<string>> {
     return new Promise((resolve, reject) => {
         readFile(path, 'utf8', (err, data) => {
             if (err) {
-                reject(err);
+                reject(err)
             } else {
                 console.log(data.split('\n').filter(x => x !== ''))
                 resolve(
@@ -43,49 +42,49 @@ function listFromFile(path: string): Promise<List<string>> {
                         data
                             .split('\n')
                             .map(d => d.trim())
-                            .filter(x => x !== '')
-                    )
-                );
+                            .filter(x => x !== ''),
+                    ),
+                )
             }
-        });
-    });
+        })
+    })
 }
 
 function getPath(name: string): string {
-    return join(__dirname, '../../dat', name);
+    return join(__dirname, '../../dat', name)
 }
 
 export function questionItem(l: List<string>, d: Decision): string {
-    let itemToTest;
+    let itemToTest
     if (Array.isArray(d.positions)) {
-        itemToTest = getCenterArray(d.positions);
+        itemToTest = getCenterArray(d.positions)
     } else {
-        itemToTest = d.positions;
+        itemToTest = d.positions
     }
 
-    return l.get(itemToTest);
+    return l.get(itemToTest)
 }
 
 export function set(name: string, list: List<string>): Promise<{}> {
     return new Promise((resolve, reject) => {
-        writeFile(getPath(name), list.toArray().join('\n'), 'utf8', (err) => {
+        writeFile(getPath(name), list.toArray().join('\n'), 'utf8', err => {
             if (err) {
-                reject(err);
+                reject(err)
             } else {
-                resolve();
+                resolve()
             }
         })
     })
 }
 
 export function get(name: string): Promise<List<string>> {
-    const path = getPath(name);
-    return fileExists(path)
-        .then(exists => {
-            if (!exists) {
-                return makeFile(path).then((): List<string> => List<string>());
-            } else {
-                return listFromFile(path);
-            }
-        })
+    const path = getPath(name)
+    return fileExists(path).then(exists => {
+        if (!exists) {
+            return makeFile(path).then((): List<string> => List<string>())
+        } else {
+            return listFromFile(path)
+        }
+    })
 }
+*/
