@@ -2,24 +2,24 @@
 # yarn lockfile v1
 
 
-"@types/immutable@^3.8.7":
+"@types/immutable@3.8.7":
   version "3.8.7"
   resolved "https://registry.yarnpkg.com/@types/immutable/-/immutable-3.8.7.tgz#536d33d30f3f3d9a6d4642a219419fd82af633fb"
   dependencies:
     immutable "*"
 
-"@types/inquirer@^0.0.34":
+"@types/inquirer@0.0.34":
   version "0.0.34"
   resolved "https://registry.yarnpkg.com/@types/inquirer/-/inquirer-0.0.34.tgz#7e250ae8d012dad853f5b9e42d45851ca3948597"
   dependencies:
     "@types/rx" "*"
     "@types/through" "*"
 
-"@types/node@*", "@types/node@^7.0.21":
+"@types/node@*", "@types/node@7.0.33":
   version "7.0.33"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.33.tgz#ae3c53ad01d7e9d62c7f1a85c5f7500d59b9d25b"
 
-"@types/ramda@^0.0.9":
+"@types/ramda@0.0.9":
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.0.9.tgz#c1b56c643688bf1c27a543ccfbc502cbda6772b6"
 
@@ -181,11 +181,11 @@ iconv-lite@^0.4.17:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
-immutable@*, immutable@^3.8.1:
+immutable@*, immutable@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
-inquirer@^3.0.6:
+inquirer@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-3.1.1.tgz#87621c4fba4072f48a8dd71c9f9df6f100b2d534"
   dependencies:
