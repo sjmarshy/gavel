@@ -19,9 +19,9 @@
   version "7.0.33"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.33.tgz#ae3c53ad01d7e9d62c7f1a85c5f7500d59b9d25b"
 
-"@types/ramda@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.0.9.tgz#c1b56c643688bf1c27a543ccfbc502cbda6772b6"
+"@types/ramda@0.24.2":
+  version "0.24.2"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.2.tgz#cce538e8fef2e85e04d16a169de8c717fe243620"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
