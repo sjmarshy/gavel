@@ -8,9 +8,9 @@
   dependencies:
     immutable "*"
 
-"@types/inquirer@0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@types/inquirer/-/inquirer-0.0.34.tgz#7e250ae8d012dad853f5b9e42d45851ca3948597"
+"@types/inquirer@0.0.35":
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/@types/inquirer/-/inquirer-0.0.35.tgz#e054657cf2d10963823957d4d06ec244f05c65be"
   dependencies:
     "@types/rx" "*"
     "@types/through" "*"
