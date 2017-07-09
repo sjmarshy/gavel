@@ -2,6 +2,7 @@
     "extends": "airbnb",
     "plugins": ["prettier"],
     "rules": {
+        "react/jsx-filename-extension": "off",
         "semi": "off",
         "indent": ["error", 4],
         "space-before-function-paren": "off",
