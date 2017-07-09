@@ -1,21 +1,30 @@
 {
-  "name": "gavel",
-  "version": "0.1.0",
-  "description": "A cli that helps you order things you know by asking a series of questions",
-  "main": "dist/index.js",
-  "author": "Sam Marshall <sjmarshy@gmail.com>",
-  "license": "GPL-3.0+",
-  "scripts": {
-    "commit": "git commit",
-    "start": "tsc && node dist"
-  },
-  "dependencies": {
-    "@types/immutable": "3.8.7",
-    "@types/inquirer": "0.0.35",
-    "@types/node": "8.0.9",
-    "@types/ramda": "0.24.2",
-    "immutable": "3.8.1",
-    "inquirer": "3.1.1",
-    "ramda": "0.24.1"
-  }
+    "name": "gavel",
+    "version": "0.1.0",
+    "description": "A cli that helps you order things you know by asking a series of questions",
+    "main": "dist/index.js",
+    "author": "Sam Marshall <sjmarshy@gmail.com>",
+    "license": "GPL-3.0+",
+    "scripts": {
+        "start": "next"
+    },
+    "dependencies": {
+        "immutable": "3.8.1",
+        "inquirer": "3.1.1",
+        "isomorphic-events": "^0.1.5",
+        "next": "beta",
+        "prettier": "^1.5.2",
+        "ramda": "0.24.1",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "tagged-union": "^1.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^4.1.1",
+        "eslint-config-airbnb": "^15.0.1",
+        "eslint-plugin-import": "^2.6.1",
+        "eslint-plugin-jsx-a11y": "^5.1.0",
+        "eslint-plugin-prettier": "^2.1.2",
+        "eslint-plugin-react": "^7.1.0"
+    }
 }

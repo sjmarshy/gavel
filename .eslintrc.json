@@ -1,0 +1,21 @@
+{
+    "extends": "airbnb",
+    "plugins": ["prettier"],
+    "rules": {
+        "react/jsx-filename-extension": "off",
+        "semi": "off",
+        "indent": ["error", 4],
+        "space-before-function-paren": "off",
+        "arrow-parens": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "trailingComma": "all",
+                "parser": "flow",
+                "tabWidth": 4,
+                "semi": false
+            }
+        ]
+    }
+}
