@@ -15,7 +15,7 @@
     "@types/node": "8.0.9",
     "@types/ramda": "0.24.2",
     "immutable": "3.8.1",
-    "inquirer": "3.2.2",
+    "inquirer": "3.2.3",
     "ramda": "0.24.1"
   }
 }
