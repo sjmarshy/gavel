@@ -15,13 +15,17 @@
     "@types/rx" "*"
     "@types/through" "*"
 
-"@types/node@*", "@types/node@8.0.9":
+"@types/node@*":
+  version "8.0.46"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.46.tgz#6e1766b2d0ed06631d5b5f87bb8e72c8dbb6888e"
+
+"@types/node@8.0.9":
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.24.16":
-  version "0.24.16"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.16.tgz#e3849362ed1ab89923c10e8755db84135275a1ac"
+"@types/ramda@0.24.17":
+  version "0.24.17"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.17.tgz#9a399c69d102588dea1c6817e4401e8fa780e40b"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
@@ -181,7 +185,11 @@ iconv-lite@^0.4.17:
   version "0.4.19"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
-immutable@*, immutable@3.8.1:
+immutable@*:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+
+immutable@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
