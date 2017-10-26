@@ -16,16 +16,16 @@
     "@types/through" "*"
 
 "@types/node@*":
-  version "8.0.46"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.46.tgz#6e1766b2d0ed06631d5b5f87bb8e72c8dbb6888e"
+  version "8.0.47"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.47.tgz#968e596f91acd59069054558a00708c445ca30c2"
 
 "@types/node@8.0.9":
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.24.17":
-  version "0.24.17"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.17.tgz#9a399c69d102588dea1c6817e4401e8fa780e40b"
+"@types/ramda@0.24.18":
+  version "0.24.18"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.18.tgz#2513efcccf47ca13d388d503f309df4b64ba52fc"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
@@ -92,8 +92,8 @@
     "@types/rx-lite" "*"
 
 "@types/rx-lite@*":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@types/rx-lite/-/rx-lite-4.0.4.tgz#710ebf89d0a2d596c21047d91b1242bcef51c30b"
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/rx-lite/-/rx-lite-4.0.5.tgz#b3581525dff69423798daa9a0d33c1e66a5e8c4c"
   dependencies:
     "@types/rx-core" "*"
     "@types/rx-core-binding" "*"
