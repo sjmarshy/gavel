@@ -23,9 +23,9 @@
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.24.18":
-  version "0.24.18"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.18.tgz#2513efcccf47ca13d388d503f309df4b64ba52fc"
+"@types/ramda@0.25.0":
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.0.tgz#f62d5a9f76b7bb40eb45cf69dac0ac548aca9222"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
@@ -221,8 +221,8 @@ is-promise@^2.1.0:
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
 
 jschardet@^1.4.2:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.5.1.tgz#c519f629f86b3a5bedba58a88d311309eec097f9"
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.6.0.tgz#c7d1a71edcff2839db2f9ec30fc5d5ebd3c1a678"
 
 lodash@^4.3.0:
   version "4.17.4"
