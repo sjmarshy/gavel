@@ -23,9 +23,9 @@
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.25.4":
-  version "0.25.4"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.4.tgz#dd9e671b2d2e9830a6797b4edd3153a52ddfa765"
+"@types/ramda@0.25.5":
+  version "0.25.5"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.5.tgz#8290d1e11e1043287aef9cbb6dcbe3a1b574d124"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
