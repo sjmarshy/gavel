@@ -8,16 +8,16 @@
   dependencies:
     immutable "*"
 
-"@types/inquirer@0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@types/inquirer/-/inquirer-0.0.37.tgz#1f65b8a280fe008cb437b8f7ab9710b098297a10"
+"@types/inquirer@0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@types/inquirer/-/inquirer-0.0.38.tgz#5c682b87152ebe8d759c875f2edbc56d787c6b99"
   dependencies:
     "@types/rx" "*"
     "@types/through" "*"
 
 "@types/node@*":
   version "9.4.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
+  resolved "http://registry.npmjs.org/@types/node/-/node-9.4.7.tgz#57d81cd98719df2c9de118f2d5f3b1120dcd7275"
 
 "@types/node@8.0.9":
   version "8.0.9"
