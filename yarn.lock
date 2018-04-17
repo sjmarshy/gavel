@@ -16,16 +16,16 @@
     "@types/through" "*"
 
 "@types/node@*":
-  version "9.6.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.1.tgz#e2d374ef15b315b48e7efc308fa1a7cd51faa06c"
+  version "9.6.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.5.tgz#ee700810fdf49ac1c399fc5980b7559b3e5a381d"
 
 "@types/node@8.0.9":
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.25.21":
-  version "0.25.21"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.21.tgz#3399ac49ea99253c7c308916960b65058a1d63c4"
+"@types/ramda@0.25.22":
+  version "0.25.22"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.22.tgz#394e3aebcce54cba457f837b97ded2d6882015db"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
@@ -186,8 +186,10 @@ has-ansi@^2.0.0:
     ansi-regex "^2.0.0"
 
 iconv-lite@^0.4.17:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
+  version "0.4.21"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.21.tgz#c47f8733d02171189ebc4a400f3218d348094798"
+  dependencies:
+    safer-buffer "^2.1.0"
 
 immutable@*:
   version "3.8.2"
@@ -272,6 +274,10 @@ rx-lite-aggregates@^4.0.8:
 rx-lite@*, rx-lite@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
+
+safer-buffer@^2.1.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
 signal-exit@^3.0.2:
   version "3.0.2"
