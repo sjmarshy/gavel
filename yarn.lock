@@ -16,16 +16,16 @@
     "@types/through" "*"
 
 "@types/node@*":
-  version "9.6.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.5.tgz#ee700810fdf49ac1c399fc5980b7559b3e5a381d"
+  version "9.6.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.6.tgz#439b91f9caf3983cad2eef1e11f6bedcbf9431d2"
 
 "@types/node@8.0.9":
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.25.23":
-  version "0.25.23"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.23.tgz#c8dded270401b31683820661feecbcff40412a90"
+"@types/ramda@0.25.24":
+  version "0.25.24"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.24.tgz#2f64ce2100271163247f93fa7b4b052db40ce155"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
