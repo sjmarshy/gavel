@@ -16,16 +16,16 @@
     "@types/through" "*"
 
 "@types/node@*":
-  version "10.9.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.4.tgz#0f4cb2dc7c1de6096055357f70179043c33e9897"
+  version "10.11.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.11.4.tgz#e8bd933c3f78795d580ae41d86590bfc1f4f389d"
 
 "@types/node@8.0.9":
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
-"@types/ramda@0.25.38":
-  version "0.25.38"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.38.tgz#6c945fcc91a5fa470cc3c5a4cd4a62d7f8d03576"
+"@types/ramda@0.25.39":
+  version "0.25.39"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.39.tgz#7f6ddc0baa6e7f99860e7752dcfbeae5655bf525"
 
 "@types/rx-core-binding@*":
   version "4.0.4"
@@ -197,7 +197,7 @@ immutable@*:
 
 immutable@3.8.1:
   version "3.8.1"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
+  resolved "http://registry.npmjs.org/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
 inquirer@3.1.1:
   version "3.1.1"
@@ -227,8 +227,8 @@ is-promise@^2.1.0:
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
 
 lodash@^4.3.0:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -292,7 +292,7 @@ string-width@^2.0.0:
 
 strip-ansi@^3.0.0:
   version "3.0.1"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
+  resolved "http://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
   dependencies:
     ansi-regex "^2.0.0"
 
@@ -308,7 +308,7 @@ supports-color@^2.0.0:
 
 through@^2.3.6:
   version "2.3.8"
-  resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
+  resolved "http://registry.npmjs.org/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
 tmp@^0.0.33:
   version "0.0.33"
