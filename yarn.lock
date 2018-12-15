@@ -18,19 +18,19 @@
     "@types/through" "*"
 
 "@types/node@*":
-  version "10.12.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.12.tgz#e15a9d034d9210f00320ef718a50c4a799417c47"
-  integrity sha512-Pr+6JRiKkfsFvmU/LK68oBRCQeEg36TyAbPhc2xpez24OOZZCuoIhWGTd39VZy6nGafSbxzGouFPTFD/rR1A0A==
+  version "10.12.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.15.tgz#20e85651b62fd86656e57c9c9bc771ab1570bc59"
+  integrity sha512-9kROxduaN98QghwwHmxXO2Xz3MaWf+I1sLVAA6KJDF5xix+IyXVhds0MAfdNwtcpSrzhaTsNB0/jnL86fgUhqA==
 
 "@types/node@8.0.9":
   version "8.0.9"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
   integrity sha512-UkiiJp6Iz2h4xzapN8BPKjhq+/BlyXcISwPVk2Kd7VJ/I1TREFokjBtvM6hftANXdsfo1IoWMXhmg8G8X+SS8Q==
 
-"@types/ramda@0.25.43":
-  version "0.25.43"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.43.tgz#bca6bed049f1eae33f8698dacedefc6999f37161"
-  integrity sha512-Ydtfw8yQpbpmgdqP8Bmby7o4NOgqCQz1QEEdKU73rdrwBje9NO5Pm+TP3j33YomHOybGhP176YwqfE+SrfO/Ww==
+"@types/ramda@0.25.44":
+  version "0.25.44"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.44.tgz#3e442ed487844a4fc33efed357d514940ef1b7fe"
+  integrity sha512-LaaBuiDSTo4FlsgNMpKoIgnbq85PP/blpptQgNijtR/H5iXhtBtByCLUElIEuSVxyno1h0yfHYqDooa+C1spIg==
 
 "@types/rx-core-binding@*":
   version "4.0.4"
